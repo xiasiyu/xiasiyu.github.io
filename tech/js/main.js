@@ -27,10 +27,12 @@
 
 		$('#page').prepend('<div id="gtco-offcanvas" />');
 		$('#page').prepend('<a href="#" class="js-gtco-nav-toggle gtco-nav-toggle "><i></i></a>');
-		var clone1 = $('.menu-1 > ul').clone();
-		$('#gtco-offcanvas').append(clone1);
-		var clone2 = $('.menu-2 > ul').clone();
-		$('#gtco-offcanvas').append(clone2);
+  var clone1 = $('.menu-1 > ul').clone();
+  clone1.append('<li><a href="robot.html">Hello I am a robot</a></li>');
+  $('#gtco-offcanvas').append(clone1);
+  var clone2 = $('.menu-2 > ul').clone();
+  clone2.append('<li><a href="robot.html">Hello I am a robot</a></li>');
+  $('#gtco-offcanvas').append(clone2);
 
 		$('#gtco-offcanvas .has-dropdown').addClass('offcanvas-has-dropdown');
 		$('#gtco-offcanvas')
